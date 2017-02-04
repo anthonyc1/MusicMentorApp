@@ -2,6 +2,6 @@
 # Terminal command: pip install -r requirements.txt
 
 Flask==0.12
-
+gunicorn==19.6.0
 Jinja2==2.9.4
 requests==2.11.1
