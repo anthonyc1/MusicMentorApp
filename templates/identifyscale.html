@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Identify Scale</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+	<div id="title">
+	<p>Scales in Music</p>
+</div>
+<div id="intro">
+	<center>What are scales?</center>
+	<p>//</p>
+</div>
+<form action="{{ url_for('identifyscale') }}" method="post">
+	<fieldset>
+		<legend>Find a scale</legend>
+		Select a scale: <select name="scale">
+		<option value="Major">Major</option>
+		<option value="Natural Minor">Natural Minor</option>
+		<option value="Harmonic Minor">Harmonic Minor</option>
+		<option value="Melodic Minor">Melodic Minor</option>
+		<option value="Pentatonic Major">Pentatonic Major</option>
+		<option value="Pentatonic Minor">Pentatonic Minor</option>
+		</select><br>
+		Enter the root note: <input type="text" name="root"><br>
+		<tab1><em>Hint: notes should be capitalized, and can have sharps(#)</em><br>
+		<input type="submit" value="Submit"><br>
+		<a href="{{ url_for('index') }}"><button type="button">Back</button></a>
+	</fieldset>
+</form>
+{% if result %}
+<table border = 1>
+	<th>Output</th>
+	<td>The {{ root }} {{ scale }} scale is:<br>{{ result }}</td>
+</table>
+{% endif %}
+</body>
+</html>

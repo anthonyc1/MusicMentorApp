@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Build Interval</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div id="title">
+	<p>Intervals in Music</p>
+</div>
+<div id="intro">
+	<center>What are intervals?</center>
+	<p>//</p>
+</div>
+<form action="{{ url_for('buildinterval') }}" method="post">
+	<fieldset>
+		<legend>Build an interval</legend>
+		Enter the root note: <input type="text" name="note"><br>
+		<tab1><em>Hint: notes should be capitalized, and can have sharps(#) or flats(b)</em><br>
+		Enter the quality: <input type="text" name="quality"><br>
+		<tab1><em>Hint: qualities include diminished(d), minor(m), Major(M), Perfect(P), Augmented(A)</em><br>
+		Enter the distance: <input type="text" name="distance"><br>
+		<tab1><em>Hint: distances can be any integer from 1 to 8</em><br>
+		<input type="submit" value="Submit"><br>
+		<a href="{{ url_for('index') }}"><button type="button">Back</button></a>
+	</fieldset>
+</form>
+
+{% if result %}
+<table border = 1>
+	<th>Output</th>
+	<td>{{ result }}</td>
+</table>
+{% endif %}
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Build Chords</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div id="title">
+	<p>Chords in Music</p>
+</div>
+<div id="intro">
+	<center>What are chords?</center>
+	<p>//</p>
+</div>
+<form action="{{ url_for('buildchord') }}" method="post">
+	<fieldset>
+		<legend>Build a chord</legend>
+		Select which scale for the chord: <select name="chord">
+		<option value="Major">Major</option>
+		<option value="Natural Minor">Natural Minor</option>
+		</select><br>
+		Enter the root note: <input type="text" name="root"><br>
+		<tab1><em>Hint: notes should be capitalized, and can have sharps(#)</em><br>
+		<input type="submit" value="Submit"><br>
+		<a href="{{ url_for('index') }}"><button type="button">Back</button></a>
+	</fieldset>
+</form>
+
+{% if result %}
+<table border = 1>
+	<th>Output</th>
+	<td>{{ result }}</td>
+</table>
+{% endif %}
+
+</body>
+</html>

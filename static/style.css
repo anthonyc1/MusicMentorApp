@@ -1,0 +1,67 @@
+#icon {
+	display:block;
+	position: relative;
+	text-align: center;
+	margin-top: 40px;
+}
+
+#title {
+	font-size: 60px;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+#intro {
+	text-align: center;
+	font-size: 18px;
+	font-family: sans-serif;
+	max-width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+center {
+	font-size: 35px;
+	text-align: center;
+}
+
+tab1 {
+    padding-left: 2em;
+}
+
+form {
+	max-width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.btn-primary:hover{
+    background: rgba(0,0,0,0);
+    color: #3a7999;
+    box-shadow: inset 0 0 0 3px #3a7999;
+}
+
+.row {
+	text-align: center;
+	height: 50px;
+}
+.endbar {
+	padding: 10px;
+	height: 20px;
+	margin-left: 5px;
+	margin-bottom: 20px;
+}
+
+#endquote {
+	font-style: italic;
+	color:gray;
+	font-family: sans-serif,georgia;
+	font-size: 14px;
+}
+table {
+	padding: 15px;
+}
+
+th, td {
+	border-bottom: 1px solid #ddd;
+}

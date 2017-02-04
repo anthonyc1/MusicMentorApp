@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Music Mentor</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+<div id="icon">
+	<img src="../static/images/musicmentoricon.png" alt="Music Mentor icon" style="width:250px; height: 250px;"></img>
+</div>
+<div id="title">
+	<p>Welcome to Music Mentor!</p>
+</div>
+<div id="intro">
+	<center>About</center>
+	<p>Music Mentor started as a project idea to create a program to help myself learn music theory. The idea grew from a python program to a Facebook Messenger Bot and now to an umbrella project consisting of an interactive messenger bot and this web application as you see here! This project seeks to help anybody, novice or veteran, to learn music theory. I hope this project will help you to either learn the basics or if not, be a useful online tool to help you figure out anything music theory related.</p>
+	<center>What you can do</center>
+	<p>So far, this web application supports:<br><br>
+		1) scale identification<br>
+		<center><a href="{{ url_for('identifyscale') }}"><button type="button" class="btn btn-default">Identify a Scale</button></a></center>
+		2) scale conversion<br>
+		<center><a href="{{ url_for('convertscale') }}"><button type="button" class="btn btn-default">Convert a Scale</button></a></center>
+		3) chord building<br>
+		<center><a href="{{ url_for('buildchord') }}"><button type="button" class="btn btn-default">Build Chord</button></a></center>
+		4) interval building<br>
+		<center><a href="{{ url_for('buildinterval') }}"><button type="button" class="btn btn-default">Build Interval</button></a></center>
+		<br>If you're not sure what any of that means, don't worry. Our application includes a quick and easy-to-understand tutorial to teach you the basics. Just click one of the buttons above to get started!</p>
+	<center>Say hi to Music Mentor bot</center>
+	<p>Check out our companion Facebook Messenger bot for more interactive fun about music!<br>
+		///</p>
+</div>
+<hr>
+<div class="row">
+	<p id="endquote">&copy 2017 Anthony Chan</p>
+</div>
+<div class="endbar">
+	Music Mentor | <a href="{{ url_for('aboutpage') }}">About</a> | <a href="{{ url_for('privacypolicy') }}">Privacy</a>
+</div>
+
+</body>
+</html>
