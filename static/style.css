@@ -67,7 +67,7 @@ button[id=back] {
 	float:left;
 }
 
-.btn-primary:hover{
+.btn-primary:hover, input[type=submit]:hover, button[id=back]:hover{
     background: rgba(0,0,0,0);
     color: #3a7999;
     box-shadow: inset 0 0 0 3px #3a7999;
