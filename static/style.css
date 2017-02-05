@@ -103,4 +103,6 @@ th, td {
 	height: 80px;
 	max-width: 80%;
 	margin-bottom:60px;
+	margin-right: auto;
+	margin-left: auto;
 }
