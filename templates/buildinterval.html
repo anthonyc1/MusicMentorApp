@@ -32,21 +32,23 @@
 	<fieldset>
 		<legend>Build an interval</legend>
 		Enter the root note: <input type="text" name="note"><br>
-		<tab1><em>Hint: notes should be capitalized, and can have sharps(#) or flats(b)</em><br>
+		<tab1><small>Hint: notes should be capitalized, and can have sharps(#) or flats(b)</small><br>
 		Enter the quality: <input type="text" name="quality"><br>
-		<tab1><em>Hint: qualities include diminished(d), minor(m), Major(M), Perfect(P), Augmented(A)</em><br>
+		<tab1><small>Hint: qualities include diminished(d), minor(m), Major(M), Perfect(P), Augmented(A)</small><br>
 		Enter the distance: <input type="text" name="distance"><br>
-		<tab1><em>Hint: distances can be any integer from 1 to 8</em><br>
+		<tab1><small>Hint: distances can be any integer from 1 to 8</small><br>
 		<input type="submit" value="Submit"><br>
 		<a href="{{ url_for('index') }}"><button type="button">Back</button></a>
 	</fieldset>
 </form>
 
 {% if result %}
+<div id="result">
 <table border = 1>
 	<th>Output</th>
 	<td>{{ result }}</td>
 </table>
+</div>
 {% endif %}
 
 </body>
