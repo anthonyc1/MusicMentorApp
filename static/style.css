@@ -80,10 +80,12 @@ table {
 th, td {
 	border: 1px solid #ddd;
 	text-align: left;
-	padding: 8px;
+	padding: 8em;
 }
 
 #result {
 	margin-right: auto;
 	margin-left: auto;
+	text-align: center;
+	height: 100px;
 }
