@@ -11,11 +11,6 @@
 	text-align: center;
 }
 
-#image img {
-	height: 340px;
-	width: 400px;
-}
-
 #title {
 	font-size: 60px;
 	font-family: sans-serif;
@@ -132,10 +127,6 @@ th, td {
 	}
 	#intro {
 		max-width: 90%
-	}
-	#image img {
-		height: 220px;
-		width: 300px;
 	}
 
 }
