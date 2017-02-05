@@ -28,6 +28,7 @@
 	<center>What are scale conversions?</center>
 	<p>//</p>
 </div>
+<div>
 <form action="{{ url_for('convertscale') }}" method="post">
 	<fieldset>
 		<legend>Convert scales</legend>
@@ -39,11 +40,11 @@
 		</select><br>
 		Enter the scale to convert: <input type="text" name="scale"><br>
 		<tab1><small>Hint: notes should be capitalized</small><br>
-		<input type="submit" value="Submit"><br>
-		<a href="{{ url_for('index') }}"><button type="button">Back</button></a>
+		<input type="submit" value="Submit">
+		<a href="{{ url_for('index') }}"><button type="button" id="back">Back</button></a>
 	</fieldset>
 </form>
-
+</div>
 {% if result %}
 <div id="result">
 <table border = 1>

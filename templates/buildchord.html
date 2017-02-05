@@ -28,6 +28,7 @@
 	<center>What are chords?</center>
 	<p>//</p>
 </div>
+<div>
 <form action="{{ url_for('buildchord') }}" method="post">
 	<fieldset>
 		<legend>Build a chord</legend>
@@ -37,11 +38,11 @@
 		</select><br>
 		Enter the root note: <input type="text" name="root"><br>
 		<tab1><small>Hint: notes should be capitalized, and can have sharps(#)</small><br>
-		<input type="submit" value="Submit"><br>
-		<a href="{{ url_for('index') }}"><button type="button">Back</button></a>
+		<input type="submit" value="Submit">
+		<a href="{{ url_for('index') }}"><button type="button" id="back">Back</button></a>
 	</fieldset>
 </form>
-
+</div>
 {% if result %}
 <div id="result">
 <table border = 1>

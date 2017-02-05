@@ -28,6 +28,7 @@
 	<center>What are intervals?</center>
 	<p>//</p>
 </div>
+<div>
 <form action="{{ url_for('buildinterval') }}" method="post">
 	<fieldset>
 		<legend>Build an interval</legend>
@@ -37,11 +38,11 @@
 		<tab1><small>Hint: qualities include diminished(d), minor(m), Major(M), Perfect(P), Augmented(A)</small><br>
 		Enter the distance: <input type="text" name="distance"><br>
 		<tab1><small>Hint: distances can be any integer from 1 to 8</small><br>
-		<input type="submit" value="Submit"><br>
-		<a href="{{ url_for('index') }}"><button type="button">Back</button></a>
+		<input type="submit" value="Submit">
+		<a href="{{ url_for('index') }}"><button type="button" id="back">Back</button></a>
 	</fieldset>
 </form>
-
+</div>
 {% if result %}
 <div id="result">
 <table border = 1>

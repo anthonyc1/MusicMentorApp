@@ -49,10 +49,20 @@ form {
 	margin-bottom: 60px;
 }
 
-input[type=submit],input[type=button] {
-	width:20em;
+input[type=submit] {
+	width:10em;
 	height: 2em;
 	border:none;
+	color: white;
+	float:right;
+}
+
+button[id=back] {
+	width:10em;
+	height: 2em;
+	border:none;
+	color: white;
+	float:left;
 }
 
 .btn-primary:hover{
@@ -75,6 +85,8 @@ input[type=submit],input[type=button] {
 table {
 	padding: 15px;
 	border-collapse: collapse;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 th, td {
@@ -84,8 +96,5 @@ th, td {
 }
 
 #result {
-	margin-right: auto;
-	margin-left: auto;
-	text-align: center;
 	height: 100px;
 }
