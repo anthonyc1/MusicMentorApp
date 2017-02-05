@@ -46,7 +46,7 @@ form {
 	max-width: 80%;
 	margin-right: auto;
 	margin-left: auto;
-	margin-bottom: 80px;
+	margin-bottom: 60px;
 }
 
 input[type=submit] {
@@ -101,4 +101,6 @@ th, td {
 
 #result {
 	height: 80px;
+	max-width: 80%;
+	margin-bottom:60px;
 }
