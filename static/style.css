@@ -59,10 +59,12 @@ form {
 	height: 50px;
 }
 .endbar {
-	padding: 10px;
+	font-size: 14px;
+	color:gray;
 	height: 20px;
-	margin-left: 5px;
-	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
 }
 
 #endquote {
