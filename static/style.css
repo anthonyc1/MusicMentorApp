@@ -96,14 +96,22 @@ table {
 	border-collapse: collapse;
 	margin-right: auto;
 	margin-left: auto;
+	width: 40%;
 }
 
-th, td {
+th {
+	border: 1px solid #ddd;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 14px;
+	height: 50px;
+}
+td {
 	border: 1px solid #ddd;
 	text-align: left;
 	font-family: sans-serif;
 	font-size: 14px;
-	padding: 5em;
+	padding: 2em;
 }
 
 #result {
@@ -132,6 +140,9 @@ th, td {
 	}
 	#intro {
 		max-width: 90%
+	}
+	table {
+		max-width: 80%;
 	}
 }
 @media screen and (max-width: 500px){
