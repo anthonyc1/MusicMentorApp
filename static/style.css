@@ -95,14 +95,11 @@ button[id=back] {
 	border-collapse: collapse;
 	margin-right: auto;
 	margin-left: auto;
-	width: 40%;
 }
-
-
 
 #result {
 	height: 80px;
-	max-width: 80%;
+	max-width: 40%;
 	margin-bottom:60px;
 	margin-right: auto;
 	margin-left: auto;
@@ -110,7 +107,7 @@ button[id=back] {
 
 #resultconvert {
 	height: 80px;
-	max-width: 80%;
+	max-width: 40%;
 	margin-bottom:120px;
 	margin-right: auto;
 	margin-left: auto;
@@ -127,19 +124,15 @@ button[id=back] {
 	#intro {
 		max-width: 90%
 	}
-	.table {
+	#result {
+		height: 100px;
+		max-width: 80%;
+	}
+	#resultconvert {
+		height: 180px;
 		max-width: 80%;
 	}
 }
 @media screen and (max-width: 500px){
-	#image img {
-		width: 280px;
-		height: 200px;
-	}
-	#result {
-		height: 100px;
-	}
-	#resultconvert {
-		height: 180px;
-	}
+
 }
