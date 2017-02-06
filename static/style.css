@@ -50,7 +50,7 @@ tab1 {
 
 #form {
 	position: relative;
-	max-width: 50%;
+	max-width: 40%;
 	margin-right: auto;
 	margin-left: auto;
 	margin-bottom: 60px;
@@ -126,10 +126,6 @@ th, td {
 
 }
 
-@media screen and (max-width: 990px){
-
-}
-
 @media screen and (max-width: 700px){
 	#form {
 		max-width: 80%;
@@ -137,19 +133,16 @@ th, td {
 	#intro {
 		max-width: 90%
 	}
-
-}
-@media screen and (max-width: 680px){
-
 }
 @media screen and (max-width: 500px){
-	#form {
-		max-width: 70%;
+	#image img {
+		width: 280px;
+		height: 200px;
 	}
 	#result {
 		height: 100px;
 	}
 	#resultconvert {
-		height: 160px;
+		height: 180px;
 	}
 }
