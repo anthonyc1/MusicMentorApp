@@ -80,6 +80,10 @@ def buildinterval():
 def privacypolicy():
 	return render_template('privacypolicy.html')
 
+@app.route('/termsofservice')
+def termsofservice():
+	return render_template('termsofservice.html')
+
 @app.route('/aboutpage')
 def aboutpage():
 	return render_template('aboutpage.html')
