@@ -180,35 +180,47 @@ def major_to_minor(scale):
 		return ("The relative key for the {} major scale is the {} minor scale".format(scale,maj2min[scale]),
 		 "The {} scale is {}".format(scale,major_scale(scale)),
 		 "The {} scale is {}".format(maj2min[scale],minor_scale(maj2min[scale].replace("m",""))))
+	else:
+		return "No such scale exists."
 def minor_to_major(scale):
 	for major, minor in maj2min.iteritems():
 		if (scale + "m") == minor:
 			return ("The relative key for the {} minor scale is the {} major scale".format(scale,major),
 			 "The {} scale is {}".format(scale,minor_scale(scale.replace("m",""))),
 			 "The {} scale is {}".format(major,major_scale(major)))
+		else:
+			return "No such scale exists."
 
 def major_to_minor_pent(scale):
 	if scale in maj2min:
 		return ("The relative key for the {} pentatonic major scale is the {} pentatonic minor scale".format(scale,maj2min[scale]),
 		 "The {} scale is {}".format(scale,pentatonic_major(scale)),
 		 "The {} scale is {}".format(maj2min[scale],pentatonic_minor(maj2min[scale].replace("m",""))))
+	else:
+		return "No such scale exists."
 def minor_to_major_pent(scale):
 	for major, minor in maj2min.iteritems():
 		if (scale + "m") == minor:
 			return ("The relative key for the {} pentatonic minor scale is the {} pentatonic major scale".format(scale,major),
 			 "The {} scale is {}".format(scale,pentatonic_minor(scale.replace("m",""))),
 			 "The {} scale is {}".format(major,pentatonic_major(major)))
+		else:
+			return "No such scale exists."
 
 half_steps = {0:"C",1:"C#",2:"D",3:"D#",4:"E",5:"F",6:"F#",7:"G",8:"G#",9:"A",10:"A#",11:"B",12:"C",13:"C#",14:"D",15:"D#",16:"E",17:"F",18:"F#",19:"G",20:"G#",21:"A",22:"A#",23:"B"}
 def major_chord(note):
 	for num, root in half_steps.iteritems():
 		if note == root:
 			return "The major chord for {} is {} {} {}".format(root,root,half_steps[int(num)+4],half_steps[int(num)+7])
+		else:
+			return "No such chord exists."
 
 def minor_chord(note):
 	for num, root in half_steps.iteritems():
 		if note == root:
 			return "The major chord for {} is {} {} {}".format(root,root,half_steps[int(num)+3],half_steps[int(num)+7])
+		else:
+			return "No such chord exists."
 
 intervals = {
 	0:["P1","d2"],
@@ -247,6 +259,10 @@ def interval_natural(note,quality,interval):
 							return "The {} interval for {} is {} to {} with {} half steps".format(quality+str(interval),note,note,whole_steps[int(num)+int(interval)-1]+"b", steps)
 						else:
 							return "One of your inputs is incorrect."
+					else:
+						return "One of your inputs is incorrect."
+			else:
+				return "One of your inputs is incorrect."
 	elif int(interval) in M:
 		for num,root in whole_steps.iteritems():
 			if note == root:
@@ -262,6 +278,10 @@ def interval_natural(note,quality,interval):
 							return "The {} interval for {} is {} to {} with {} half steps".format(quality+str(interval),note,note,whole_steps[int(num)+int(interval)-1]+"bb", steps)
 						else:
 							return "One of your inputs is incorrect."	
+					else:
+						return "One of your inputs is incorrect."
+			else:
+				return "One of your inputs is incorrect."		
 
 def interval_sharp(note,quality,interval):
 	if int(interval) in P:
@@ -277,6 +297,10 @@ def interval_sharp(note,quality,interval):
 							return "The {} interval for {} is {} to {} with {} half steps".format(quality+str(interval),note,note,whole_steps_sharps[int(num)+int(interval)-1].replace("#",""), steps)
 						else:
 							return "One of your inputs is incorrect."
+					else:
+						return "One of your inputs is incorrect."
+			else:
+				return "One of your inputs is incorrect."
 	elif int(interval) in M:
 		for num,root in whole_steps_sharps.iteritems():
 			if note == root:
@@ -292,6 +316,10 @@ def interval_sharp(note,quality,interval):
 							return "The {} interval for {} is {} to {} with {} half steps".format(quality+str(interval),note,note,whole_steps_sharps[int(num)+int(interval)-1].replace("#","b"), steps)
 						else:
 							return "One of your inputs is incorrect."
+					else:
+						return "One of your inputs is incorrect."
+			else:
+				return "One of your inputs is incorrect."
 
 def interval_flat(note,quality,interval):
 	if int(interval) in P:
@@ -307,6 +335,10 @@ def interval_flat(note,quality,interval):
 							return "The {} interval for {} is {} to {} with {} half steps".format(quality+str(interval),note,note,whole_steps_flats[int(num)+int(interval)-1]+"b", steps)
 						else:
 							return "One of your inputs is incorrect."
+					else:
+						return "One of your inputs is incorrect."
+			else:
+				return "One of your inputs is incorrect."
 	elif int(interval) in M:
 		for num,root in whole_steps_flats.iteritems():
 			if note == root:
@@ -321,4 +353,8 @@ def interval_flat(note,quality,interval):
 						elif quality == "d":
 							return "The {} interval for {} is {} to {} with {} half steps".format(quality+str(interval),note,note,whole_steps_flats[int(num)+int(interval)-1].replace("#","bbb"), steps)
 						else:
-							return "One of your inputs is incorrect."		
+							return "One of your inputs is incorrect."	
+					else:
+						return "One of your inputs is incorrect."
+			else:
+				return "One of your inputs is incorrect."	
