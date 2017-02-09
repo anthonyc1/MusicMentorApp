@@ -259,8 +259,6 @@ def interval_natural(note,quality,interval):
 							return "The {} interval for {} is {} to {} with {} half steps".format(quality+str(interval),note,note,whole_steps[int(num)+int(interval)-1]+"b", steps)
 						else:
 							return "One of your inputs is incorrect."
-			else:
-				return "One of your inputs is incorrect."
 	elif int(interval) in M:
 		for num,root in whole_steps.iteritems():
 			if note == root:
@@ -275,9 +273,7 @@ def interval_natural(note,quality,interval):
 						elif quality == "d":
 							return "The {} interval for {} is {} to {} with {} half steps".format(quality+str(interval),note,note,whole_steps[int(num)+int(interval)-1]+"bb", steps)
 						else:
-							return "One of your inputs is incorrect."	
-			else:
-				return "One of your inputs is incorrect."		
+							return "One of your inputs is incorrect."		
 	else:
 		return "One of your inputs is incorrect."
 
@@ -295,8 +291,6 @@ def interval_sharp(note,quality,interval):
 							return "The {} interval for {} is {} to {} with {} half steps".format(quality+str(interval),note,note,whole_steps_sharps[int(num)+int(interval)-1].replace("#",""), steps)
 						else:
 							return "One of your inputs is incorrect."
-			else:
-				return "One of your inputs is incorrect."
 	elif int(interval) in M:
 		for num,root in whole_steps_sharps.iteritems():
 			if note == root:
@@ -312,8 +306,6 @@ def interval_sharp(note,quality,interval):
 							return "The {} interval for {} is {} to {} with {} half steps".format(quality+str(interval),note,note,whole_steps_sharps[int(num)+int(interval)-1].replace("#","b"), steps)
 						else:
 							return "One of your inputs is incorrect."
-			else:
-				return "One of your inputs is incorrect."
 	else:
 		return "One of your inputs is incorrect."
 
@@ -331,8 +323,6 @@ def interval_flat(note,quality,interval):
 							return "The {} interval for {} is {} to {} with {} half steps".format(quality+str(interval),note,note,whole_steps_flats[int(num)+int(interval)-1]+"b", steps)
 						else:
 							return "One of your inputs is incorrect."
-			else:
-				return "One of your inputs is incorrect."
 	elif int(interval) in M:
 		for num,root in whole_steps_flats.iteritems():
 			if note == root:
@@ -348,7 +338,5 @@ def interval_flat(note,quality,interval):
 							return "The {} interval for {} is {} to {} with {} half steps".format(quality+str(interval),note,note,whole_steps_flats[int(num)+int(interval)-1].replace("#","bbb"), steps)
 						else:
 							return "One of your inputs is incorrect."	
-			else:
-				return "One of your inputs is incorrect."
 	else:
 		return "One of your inputs is incorrect."	
