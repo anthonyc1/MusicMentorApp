@@ -47,14 +47,28 @@
 	<p>Music Mentor started as a project idea to create a program to help myself learn music theory. The idea grew from a python program to a Facebook Messenger Bot and now to an umbrella project consisting of an interactive messenger bot and this web application as you see here! This project seeks to help anybody, novice or veteran, to learn music theory. I hope this project will help you to either learn the basics or if not, be a useful online tool to help you figure out anything music theory related.</p>
 	<center>What you can do</center>
 	<p>So far, this web application supports:<br><br>
-		1) scale identification<br>
-		<center><a href="{{ url_for('identifyscale') }}"><button type="button" class="btn btn-default">Identify a Scale</button></a></center>
-		2) scale conversion<br>
-		<center><a href="{{ url_for('convertscale') }}"><button type="button" class="btn btn-default">Convert a Scale</button></a></center>
-		3) chord building<br>
-		<center><a href="{{ url_for('buildchord') }}"><button type="button" class="btn btn-default">Build Chord</button></a></center>
-		4) interval building<br>
-		<center><a href="{{ url_for('buildinterval') }}"><button type="button" class="btn btn-default">Build Interval</button></a></center>
+	<table class="table">
+		<tr>
+			<th>Function</th>
+			<th>Try It Out</th>
+		</tr>
+		<tr>
+			<td>scale identification</td>
+			<td><a href="{{ url_for('identifyscale') }}"><button type="button" class="btn btn-default">Identify a Scale</button></a></td>
+		</tr>
+		<tr>
+			<td>scale conversion</td>
+			<td><a href="{{ url_for('convertscale') }}"><button type="button" class="btn btn-default">Convert a Scale</button></a></td>
+		</tr>
+		<tr>
+			<td>chord building</td>
+			<td><a href="{{ url_for('buildchord') }}"><button type="button" class="btn btn-default">Build Chord</button></a></td>
+		</tr>
+		<tr>
+			<td>interval building</td>
+			<td><a href="{{ url_for('buildinterval') }}"><button type="button" class="btn btn-default">Build Interval</button></a></td>
+		</tr>
+	</table>
 		<br>If you're not sure what any of that means, don't worry. Our application includes a quick and easy-to-understand tutorial to teach you the basics. Just click one of the buttons above to get started!</p>
 	<center>Talk to our chat bot</center>
 	<p>Say hi to our companion Facebook Messenger bot for more interactive learning and fun about music!<br>
