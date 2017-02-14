@@ -218,7 +218,7 @@ def major_chord(note):
 def minor_chord(note):
 	for num, root in half_steps.iteritems():
 		if note == root:
-			return "The major chord for {} is {} {} {}".format(root,root,half_steps[int(num)+3],half_steps[int(num)+7])
+			return "The natural minor chord for {} is {} {} {}".format(root,root,half_steps[int(num)+3],half_steps[int(num)+7])
 	else:
 		return "No such chord exists."
 
