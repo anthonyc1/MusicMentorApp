@@ -281,11 +281,6 @@ button[id=back] {
 		padding-right: 5px;
 	}
 	#result {
-		height: 100px;
-		max-width: 80%;
-	}
-	#resultconvert {
-		height: 180px;
 		max-width: 80%;
 	}
 }
