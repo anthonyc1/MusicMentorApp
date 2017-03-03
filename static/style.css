@@ -275,8 +275,10 @@ button[id=back] {
 		padding-top: 0px;
 		font-size: 3.5em;
 	}
-	#intro {
-		max-width: 90%
+	#intro, #intro2 {
+		max-width: 90%;
+		padding-left: 5px;
+		padding-right: 5px;
 	}
 	#result {
 		height: 100px;
