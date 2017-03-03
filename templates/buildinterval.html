@@ -53,82 +53,85 @@
 </form>
 </div>
 {% if result %}
-<div id="result">
-<table class= "table">
-<tr>
-	<th>Output</th>
-</tr>
-<tr>
-	<td>{{ result }}</td>
-</tr>
-</table>
+<div id="resultbackground">	
+	<div id="result">
+	<table class= "table">
+	<tr>
+		<th>Output</th>
+	</tr>
+	<tr>
+		<td>{{ result }}</td>
+	</tr>
+	</table>
+	</div>
 </div>
 {% endif %}
-<div id="intro">
-	<center>What are intervals?</center>
-	<p>An interval is the distance between two notes. This is one of the more complicated topics in music theory. To determine the distance between two notes, we have to specify several things: the quality of the interval, the distance or number of notes the interval encompasses, and the root note.</p>
-	<hr>
-	<center>Quality</center>
-	<p>There are five qualities for intervals: Major(M), minor(m), Perfect(P), Augmented(A), and diminished(d). Know that each quality determines the number of half steps for each interval. Here's a table for ease of reference.</p>
-	<table class="table">
-		<tr><th>Quality</th>
-			<th>Distance</th>
-			<th># of Half Steps</th>
-		</tr>
-		<tr><td>P</td>
-			<td>1</td>
-			<td>0</td>
-		</tr>
-		<tr><td>M</td>
-			<td>2</td>
-			<td>2</td>
-		</tr>
-		<tr><td>M</td>
-			<td>3</td>
-			<td>4</td>
-		</tr>
-		<tr><td>P</td>
-			<td>4</td>
-			<td>5</td>
-		</tr>
-		<tr><td>P</td>
-			<td>5</td>
-			<td>7</td>
-		</tr>
-		<tr><td>M</td>
-			<td>6</td>
-			<td>9</td>
-		</tr>
-		<tr><td>M</td>
-			<td>7</td>
-			<td>11</td>
-		</tr>
-		<tr><td>P</td>
-			<td>8</td>
-			<td>12</td>
-		</tr>
-	</table>
-	<p>Also know that different intervals get different interval designators. Intervals of a unison(1), fourth(4), fifth(5), and octave(8) get diminished, perfect, and augmented, while the intervals of a second(2), third(3), sixth(6), and seventh(7) get diminished, minor, major, and augmented.</p>
-	<p>In summary:</p>
-	<table class="table">
-		<tr>
-			<td>Intervals 1, 4, 5, 8</td>
-			<td>d -- P -- A</td>
-		</tr>
-		<tr>
-			<td>Intervals 2, 3, 6, 7</td>
-			<td>d -- m -- M -- A</td>
-		</tr>
-	</table>
-	<p>The relationships between each interval designator is a half step. For example, the M3 interval has 4 half steps. That means the m3 interval will have 3 half steps, the d3 interval will have 2 half steps, and the A3 interval will have 5 half steps.</p>
-	<hr>
-	<center>Determining distance</center>
-	<p>The distance of an interval is the number of notes it encompasses. For example, from C to G is an interval of 5 because there are five notes in this interval: C D E F G.</p>
-	<hr>
-	<center>Putting it all together</center>
-	<p>Now to find the P8 interval of C, we first count 8 notes starting with C, which is C D E F G A B C. We know that the P8 interval goes from C to C, and now, we take into account of the quality. A perfect interval with 8 notes has a total of 12 half steps. This determines if any accidental would be attached to the end note of the interval. In this case, there are exactly 12 half steps from C to C so the P8 interval of C is just C to C.</p>
+<div id="pagebackground">
+	<div id="intro2">
+		<center>What are intervals?</center>
+		<p>An interval is the distance between two notes. This is one of the more complicated topics in music theory. To determine the distance between two notes, we have to specify several things: the quality of the interval, the distance or number of notes the interval encompasses, and the root note.</p>
+		<hr>
+		<center>Quality</center>
+		<p>There are five qualities for intervals: Major(M), minor(m), Perfect(P), Augmented(A), and diminished(d). Know that each quality determines the number of half steps for each interval. Here's a table for ease of reference.</p>
+		<table class="table">
+			<tr><th>Quality</th>
+				<th>Distance</th>
+				<th># of Half Steps</th>
+			</tr>
+			<tr><td>P</td>
+				<td>1</td>
+				<td>0</td>
+			</tr>
+			<tr><td>M</td>
+				<td>2</td>
+				<td>2</td>
+			</tr>
+			<tr><td>M</td>
+				<td>3</td>
+				<td>4</td>
+			</tr>
+			<tr><td>P</td>
+				<td>4</td>
+				<td>5</td>
+			</tr>
+			<tr><td>P</td>
+				<td>5</td>
+				<td>7</td>
+			</tr>
+			<tr><td>M</td>
+				<td>6</td>
+				<td>9</td>
+			</tr>
+			<tr><td>M</td>
+				<td>7</td>
+				<td>11</td>
+			</tr>
+			<tr><td>P</td>
+				<td>8</td>
+				<td>12</td>
+			</tr>
+		</table>
+		<p>Also know that different intervals get different interval designators. Intervals of a unison(1), fourth(4), fifth(5), and octave(8) get diminished, perfect, and augmented, while the intervals of a second(2), third(3), sixth(6), and seventh(7) get diminished, minor, major, and augmented.</p>
+		<p>In summary:</p>
+		<table class="table">
+			<tr>
+				<td>Intervals 1, 4, 5, 8</td>
+				<td>d -- P -- A</td>
+			</tr>
+			<tr>
+				<td>Intervals 2, 3, 6, 7</td>
+				<td>d -- m -- M -- A</td>
+			</tr>
+		</table>
+		<p>The relationships between each interval designator is a half step. For example, the M3 interval has 4 half steps. That means the m3 interval will have 3 half steps, the d3 interval will have 2 half steps, and the A3 interval will have 5 half steps.</p>
+		<hr>
+		<center>Determining distance</center>
+		<p>The distance of an interval is the number of notes it encompasses. For example, from C to G is an interval of 5 because there are five notes in this interval: C D E F G.</p>
+		<hr>
+		<center>Putting it all together</center>
+		<p>Now to find the P8 interval of C, we first count 8 notes starting with C, which is C D E F G A B C. We know that the P8 interval goes from C to C, and now, we take into account of the quality. A perfect interval with 8 notes has a total of 12 half steps. This determines if any accidental would be attached to the end note of the interval. In this case, there are exactly 12 half steps from C to C so the P8 interval of C is just C to C.</p>
+	</div>
 </div>
-<hr>
 <div class="endbar">
 	<p>&copy 2017 Music Mentor. All rights reserved. | <a href="{{ url_for('aboutpage') }}" target="_blank">About</a> | <a href="{{ url_for('termsofservice') }}" target="_blank">Terms of Service</a> | <a href="{{ url_for('privacypolicy') }}" target="_blank">Privacy Policy</a></p>
 </div>
