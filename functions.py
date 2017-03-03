@@ -177,16 +177,16 @@ maj2min = {"C":"Am","C#":"Bbm","D":"Bm","D#":"Cm","E":"C#m","F":"Dm","F#":"Ebm",
 
 def major_to_minor(scale):
 	if scale in maj2min:
-		return ("The relative key for the {} major scale is the {} minor scale\n".format(scale,maj2min[scale]),
-		 "The {} scale is {}\n".format(scale,major_scale(scale)),
+		return ("The relative key for the {} major scale is the {} minor scale".format(scale,maj2min[scale]),
+		 "The {} scale is {}".format(scale,major_scale(scale)),
 		 "The {} scale is {}".format(maj2min[scale],minor_scale(maj2min[scale].replace("m",""))))
 	else:
 		return "No such scale exists."
 def minor_to_major(scale):
 	for major, minor in maj2min.iteritems():
 		if (scale + "m") == minor:
-			return ("The relative key for the {} minor scale is the {} major scale\n".format(scale,major),
-			 "The {} scale is {}\n".format(scale,minor_scale(scale.replace("m",""))),
+			return ("The relative key for the {} minor scale is the {} major scale".format(scale,major),
+			 "The {} scale is {}".format(scale,minor_scale(scale.replace("m",""))),
 			 "The {} scale is {}".format(major,major_scale(major)))
 	else:
 		return "No such scale exists."
