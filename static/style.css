@@ -113,6 +113,12 @@
 	color:white;
 }
 
+#body1 #text th {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
 #bodybot{
 	background: #3B5998;
 	top:0px;
