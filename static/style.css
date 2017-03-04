@@ -151,6 +151,15 @@
 	padding-bottom: 50px;
 }
 
+#body2 #text p,#aboutbody #text p,#aboutbody2 #text p{
+	text-align: left;
+}
+
+#body2 #text center, #aboutbody #text center, #aboutbody2 #text center{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
 #privacy {
 	font-size: 14px;
 	font-family: times, sans-serif;
