@@ -1,2 +1,3 @@
-#music-mentor-app
-*Your very own music theory mentor* :musical_score:
+# Music Mentor Web Application
+
+*An online music theory mentor tool* :musical_score:
