@@ -1,3 +1,5 @@
 # Music Mentor Web Application
 
-*An online music theory mentor tool* :musical_score:
+The goal is to teach users basic music theory :musical_score:
+
+Check out the companion Messenger chatbot at https://github.com/anthonyc1/MusicMentorBot
