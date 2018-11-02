@@ -1,7 +1,7 @@
 # This file is used by pip to install the app dependencies
 # Terminal command: pip install -r requirements.txt
 
-Flask==0.12
+flask>=0.12.3
 gunicorn==19.6.0
 Jinja2==2.9.4
 requests>=2.20.0
