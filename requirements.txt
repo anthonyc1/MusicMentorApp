@@ -4,4 +4,4 @@
 Flask==0.12
 gunicorn==19.6.0
 Jinja2==2.9.4
-requests==2.11.1
+requests>=2.20.0
